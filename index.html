@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>TERMINAL | Caesar Cipher</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Cipher Terminal</h1>
+        
+        <form method="POST">
+            <label>INPUT_STRING:</label>
+            <textarea name="message" placeholder="AWAITING INPUT..." required>{{ original }}</textarea>
+            
+            <div class="controls">
+                <div>
+                    <label>SHIFT_KEY:</label>
+                    <input type="number" name="shift" value="3" min="0" max="25">
+                </div>
+                <div>
+                    <label>PROTOCOL:</label>
+                    <select name="mode">
+                        <option value="encrypt">ENCRYPT</option>
+                        <option value="decrypt">DECRYPT</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit">EXECUTE OPERATION</button>
+        </form>
+
+        {% if result %}
+        <div class="result-area">
+            <label>OUTPUT_DATA:</label>
+            <div class="output-box">{{ result }}</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

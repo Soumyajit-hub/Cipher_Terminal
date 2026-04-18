@@ -1,0 +1,152 @@
+/* Hacker Theme - Custom CSS */
+body {
+    background: radial-gradient(circle, #0d1117 0%, #000000 100%);
+    color: #ff0000; /* Matrix Green */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-container {
+    background-color: rgba(13, 17, 23, 0.9);
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid #ff0000;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.301);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #ff0000;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+textarea, input, select {
+    width: 100%;
+    background: #000;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.result-area {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.output-box {
+    background: #050505;
+    padding: 20px;
+    border: 1px solid #ff0000;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+/* 
+body {
+    background-color: #0a0a0c;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.main-container {
+    background-color: #1a1a1e;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #00ff41;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #000;
+    color: #00ff41;
+    border: 1px solid #333;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00ff41;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008f11;
+}
+
+.output-box {
+    background: #000;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px dashed #00ff41;
+    word-wrap: break-word;
+}
+*/
